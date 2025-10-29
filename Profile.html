@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Портфолио — Наталья Патикина | Интерьерная живопись</title>
+        <meta name="description" content="Портфолио Натальи Патикиной — коллекция картин в жанре фактурной интерьерной живописи. Уникальные произведения, подходящие для современных пространств.">
+        <script src="js/portfolio.js" defer></script>
+        <script src="js/workStep.js" defer></script>
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/layout.css" rel="stylesheet">
+        <link href="css/portfoli.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <!-- Animate On Scroll Library -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Меню от 1920px до 1400px -->
+        <div id="HeadTop" class=" headtop container-fluid d-none d-xxl-block">
+            <div>
+                <div class="row justify-content-end ms-2 gap-5">
+                    <div class="topinfo d-flex col-xxl-6 gap-5">
+                        <a href="MainPage.html">Главная</a>
+                        <a href="AboutMe.html">Обо мне</a>
+                        <a href="WorkSteps.html">Процесс создания работ</a>
+                        <a href="Profile.html#feedback">Связаться со мной</a>
+                    </div>
+                    <nav class="d-flex col-2 gap-2">
+                        <a href="https://vk.com/npatikina" class="d-flex justify-content-center align-items-center">
+                            <img src="images/icons8-vkontakte.svg" alt="VK" width="33" >
+                        </a>
+                        <a href="https://t.me/Npatikina" class="d-flex justify-content-center align-items-center">
+                            <img src="images/icons8-телеграм.svg" alt="Telegram" width="33">
+                        </a>
+                        <a href="https://wa.me/79504713267" class="d-flex justify-content-center align-items-center">
+                            <img src="images/icons8-whatsapp.svg" alt="Whatsapp" width="33">
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- Меню от 1400px до 992px -->
+        <div class="container-fluid d-none d-xl-flex d-lg-flex d-xxl-none justify-content-between align-items-center py-3 px-3 headtop">
+            <div class="d-flex gap-4 topinfo">
+                <a href="MainPage.html">Главная</a>
+                <a href="AboutMe.html">Обо мне</a>
+                <a href="WorkSteps.html">Процесс создания работ</a>
+                <a href="Profile.html#feedback">Связаться со мной</a>
+            </div>
+            <nav class="d-flex gap-2">
+              <a href="https://vk.com/npatikina"><img src="images/icons8-vkontakte.svg" width="25" alt="VK"></a>
+              <a href="https://t.me/Npatikina"><img src="images/icons8-телеграм.svg" width="25" alt="TG"></a>
+              <a href="https://wa.me/79504713267"><img src="images/icons8-whatsapp.svg" width="25" alt="WA"></a>
+            </nav>
+          </div>
+
+        <!-- бургерное меню на экранах меньше 992px -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary d-block d-lg-none">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="MainPage.html">Патикина Наталья</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="MainPage.html">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="AboutMe.html">Обо мне</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="WorkSteps.html">Процесс создания работ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Profile.html#feedback">Связаться со мной</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://t.me/Npatikina">Telegram</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://vk.com/npatikina">Vkontakte</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Introduction -->
+    <div class="container-fluid intro-block mx-auto gap-1">
+        <div class="d-flex flex-column col-xxl-4 col-lg-6 mx-auto ">
+            <div class="intro-text mx-auto">
+                <h1>Мои работы</h1>
+            </div>
+        </div>
+        <div class="d-flex flex-column col-xxl-10 col-lg-12 mx-auto">
+            <div class="description mx-auto">
+                <h2>Живопись, вдохновлённая текстурами и пространством</h2>
+            </div>
+        </div>
+    </div>
+    
+     <!-- Main -->
+    <div class="container-fluid portfolio-block mx-auto margin-between-blocks ">
+        <div class="row gap-3 gap-md-3 gap-lg-4 justify-content-center margin-top" data-aos="fade-up">
+            <!-- 1 -->
+            <div class="picture-block margin-top">
+                <img  id = "portfolio-pic-1" src="images/Pic2.webp" alt="Фото1-Круг" loading="lazy" data-aos="zoom-out">
+                <div class="overlay">
+                    Посмотреть
+                </div>
+            </div>
+            <!-- 2 -->
+            <div id = "secondpic" class="picture-block margin-top">
+                <img id = "portfolio-pic-2" src="images/MainPic.webp" alt="Фото2-Драпировка" loading="lazy" data-aos="zoom-out">
+                <div class="overlay">
+                    Посмотреть
+                </div>
+            </div>
+            <!-- 3 -->
+            <div id = "thirdpic" class="picture-block margin-top">
+                <img id = "portfolio-pic-3" src="images/Pic5.webp" alt="Фото3" loading="lazy" data-aos="zoom-out">
+                <div class="overlay">
+                    Посмотреть
+                </div>
+            </div>
+            <div class="picture-block">
+                <img id = "portfolio-pic-4" src="images/Pic4.webp" alt="Фото4" loading="lazy" data-aos="zoom-out">
+                <div class="overlay">
+                    Посмотреть
+                </div>
+            </div>
+            <div class="picture-block">
+                <img id = "portfolio-pic-5" src="images/Pic1.webp" alt="Фото5" loading="lazy" data-aos="zoom-out">
+                <div class="overlay">
+                    Посмотреть
+                </div>
+            </div>
+            <div class="picture-block">
+                <img id = "portfolio-pic-6" src="images/Pic6.webp" alt="Фото6" loading="lazy" data-aos="zoom-out">
+                <div class="overlay">
+                    Посмотреть
+                </div>
+            </div>
+            <div class="picture-block">
+                <img id = "portfolio-pic-7" src="images/Pic3.webp" alt="Фото7" loading="lazy" data-aos="fade-up">
+                <div class="overlay">
+                    Посмотреть
+                </div>
+            </div>
+            <div class="picture-block">
+                <img id = "portfolio-pic-8" src="images/Pic8.webp" alt="Фото8" loading="lazy" data-aos="fade-up">
+                <div class="overlay">
+                    Посмотреть
+                </div>
+            </div>
+            <div class="picture-block">
+                <img id = "portfolio-pic-9" src="images/Pic9.webp" alt="Фото9" loading="lazy" data-aos="fade-up">
+                <div class="overlay">
+                    Посмотреть
+                </div>
+            </div>
+            <div class="picture-block">
+                <img id = "portfolio-pic-10" src="images/Pic7.webp" alt="Фото10" loading="lazy" data-aos="fade-up">
+                <div class="overlay">
+                    Посмотреть
+                </div>
+            </div>
+            <div class="picture-block">
+                <img id = "portfolio-pic-11" src="images/Pic10.webp" alt="Фото11" loading="lazy" data-aos="fade-up">
+                <div class="overlay">
+                    Посмотреть
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="feedback"></a>
+    <!-- Feedback -->
+    <div class = "container-fluid bottom-block p-0" data-aos="fade-up" data-aos-easing="linear">
+        <div class=" row justify-content-center left-form-margin " data-aos="zoom-in-up" data-aos-delay="500">
+            <div class="col-7 ">
+                <h2 class="title">Связаться со мной</h2>
+                <!-- Form -->
+                <form name = "contact" action="#" method="post" class="d-flex flex-column gap-3">
+                    <div class="d-flex align-items-center gap-3">
+                        <label for="fname">Имя *</label>
+                        <input name="fname" id="fname" required>
+                    </div>
+                    <div class="d-flex align-items-center gap-3">
+                        <label for="mail">Почта *</label>
+                        <input type="email" name="mail" id="mail">
+                    </div>
+                    <div class="d-flex align-items-center gap-3">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" name="phone" id="phone"  maxlength="10" placeholder="8 9123456789">
+                    </div>
+                    <div>
+                        <button type="submit" class="submit-button">Отправить</button>
+                    </div>
+                </form>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <button id="scrollTopBtn">🠕</button>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid my-3">
+            <div class="row justify-content-center ">
+                <div class="d-flex col-7 gap-5 justify-content-center align-items-center">
+                    <div>+7934545643</div>
+                    <div>г.Пермь,Россия</div>
+                    <div>Npatikina@gmail.com</div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+</body>
+</html>
