@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        font-family: TenorSans, 'Tenor Sans';
+        font-size: 36px;
+      }
+    </style>
+  </defs>
+  <g>
+    <circle class="cls-2" cx="25" cy="25" r="24.5"/>
+    <path class="cls-1" d="m25,1c13.23,0,24,10.77,24,24s-10.77,24-24,24S1,38.23,1,25,11.77,1,25,1m0-1C11.19,0,0,11.19,0,25s11.19,25,25,25,25-11.19,25-25S38.81,0,25,0h0Z"/>
+  </g>
+  <text class="cls-3" transform="translate(15.21 35.8)"><tspan x="0" y="0">2</tspan></text>
+</svg>
