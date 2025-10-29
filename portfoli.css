@@ -1,0 +1,189 @@
+:root {
+    font-size: 14pt !important;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-grey: #5B5B5B;
+    --color-dark-white:#f1eeeeb7;
+    --color-blue:#2F547F;
+    --color-light-grey:#E2E5Ed;
+    --color-but-grey:#424346;
+}
+.intro-block {
+    width: 73.98rem;
+    height: 15.75rem;
+    background-color:var(--color-light-grey);;
+
+}
+.intro-text {
+    font-family: "Streamster";
+    font-size: 64pt;
+    margin-top: 2rem;
+}
+.portfolio-block {
+    width: 73.95rem;
+    height: 96rem;
+    background-color:#f1eeee;
+}
+.picture-block {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: var(--color-dark-white);
+    padding: 0% !important;
+    border-radius: 1%;  
+}
+
+.picture-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 1%;
+    cursor: pointer;
+    transition:filter 0.3s ease;
+    
+  }
+.picture-block img:hover {
+    filter: brightness(40%) !important;
+  }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+.picture-block:hover .overlay {
+    opacity: 1;
+    color: var(--color-white);
+    
+}
+
+.margin-top {
+    margin-top: 3rem;
+}
+#scrollTopBtn {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    display:none;
+    background-color: #212324ad;
+    color: var(--color-white);
+    padding: 0.3rem 1.2rem;
+    border-radius: 20%;
+    font-family:"CatLinz";
+    font-size: 30pt;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+}
+#scrollTopBtn:hover {
+    transform: scale(1.03);
+    transition: transform 0.2s ease;
+    background-color: #cecece;
+    color: #212324;
+}
+
+/* В 1200px and 1400px */
+@media (max-width: 1400px) {
+
+    .intro-block {
+        width: 65rem;
+    }
+
+    .description {
+        font-size: 32pt;
+    }
+
+    .portfolio-block {
+        width: 65rem;
+        height: 80rem;
+    }
+
+    .picture-block {
+        width: 330px;
+        height: 330px;
+    }
+}
+/* Btwn 992 px and 1200px ноутбуки */
+@media (max-width: 1200px) {
+
+    .intro-block {
+        width: 55rem;
+    }
+    .intro-text {
+        font-size: 52pt;
+        margin-bottom: 1rem;
+    }
+    h1{
+        font-size: 52pt;
+    }
+    .description {
+        font-size: 30pt;
+    }
+    .portfolio-block {
+        width: 55rem;
+        height: 75rem;
+    }
+    .picture-block {
+        width: 300px;
+        height: 300px;
+    }
+
+}
+
+/* Btwn 992px and 768px планшеты*/
+@media (max-width: 992px) {
+
+    .intro-block {
+        width: 100%;
+    }
+    .description {
+        font-size: 26pt;
+        text-align: center;
+    }
+    .portfolio-block {
+        width: 100%;
+        height: 139rem;
+        padding: 0 5%;
+    }
+    .picture-block {
+        width: 400px;
+        height: 400px;
+        flex: 1 1 300px; 
+    }
+
+    #thirdpic.margin-top{
+        margin-top: 0;
+    }
+    .bottom-block {
+        width: 100%;
+    }    
+}
+@media (max-width: 671px) {
+    .description {
+        font-size: 24pt;
+    }
+    .picture-block {
+        width: 100%;
+        max-width: 500px;
+        flex: 1 1 300px; 
+        
+    }
+    .portfolio-block {
+        width: 100%;
+        height: 252rem;
+    }
+    #secondpic.margin-top{
+        margin-top: 0;
+    }
+
+
+}

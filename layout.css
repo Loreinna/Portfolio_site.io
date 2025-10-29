@@ -1,0 +1,524 @@
+:root {
+    font-size: 14pt !important;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-grey: #5B5B5B;
+    --color-dark-white:#f1eeeeb7;
+    --color-blue:#2F547F;
+    --color-light-grey:#E2E5Ed;
+    --color-but-grey:#424346;
+}
+
+@font-face {
+    font-family: "TenorSans";
+    src: url("../fonts/TenorSans-Regular.ttf");
+}
+@font-face {
+    font-family: "Streamster";
+    src: url("../fonts/streamsterrusbylyajka.otf");
+}
+@font-face {
+    font-family: "CatLinz";
+    src: url("../fonts/CATLinz_1.8.ttf");
+}
+html, body {
+    min-width: 360px;
+}
+body {
+    font-family: "TenorSans";
+    margin: 0;
+    width: 100%;
+}
+header {
+    height: 3.43rem;
+
+}
+.headtop {
+    background-color:#ffffffd7;
+    position: fixed;
+    padding-top: 0.80rem;
+    backdrop-filter: blur(0.32rem);
+    z-index: 100;
+    height: 3.3rem;
+}
+/* .headContent {
+    margin-left: 2%;
+    margin-right: 2%;
+} */
+.topinfo {
+    margin-left: 1rem;
+}
+#HeadTop .topinfo a {
+  white-space: nowrap;
+  font-size: 1rem;
+}
+#HeadTop nav a img {
+  display: block;
+}
+.navbar {
+    z-index: 100;
+}
+.margin-between-blocks {
+    margin-bottom: 4.82rem;
+}
+.main-pic-size{
+    width: 73.98rem;
+    height: 38.58rem;
+}
+
+.Natalya {
+    font-family: "Streamster";
+    font-size: 64pt;
+}
+h1{
+    font-size: 64pt;
+}
+.name-mobile {
+        display: none;
+    }
+.border-radius-10 {
+    width: 38.57rem;
+    border-radius: 10px;
+}
+.description {
+    font-family:"CatLinz";
+    font-size: 36pt;
+}
+.grey-container{
+    background-color: var(--color-light-grey);
+    width: 73.98rem;
+    padding: 1.34rem;
+}
+.profile-button {
+    background-color: var(--color-but-grey);
+    color: var(--color-white);
+    padding: 0.91rem  2.47rem;
+    font-family:"CatLinz";
+    font-size: 30pt;
+    text-align: center;
+    text-decoration: none;
+}
+.buttom-margin {
+    margin-bottom: 0.32rem;
+}
+.left-form-margin {
+    margin-left: 1.61rem;
+}
+    
+.bottom-block {
+    width: 73.98rem;
+    height: 30.26rem;
+    background-image:url("../images/BottomPic.webp");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.title {
+    margin-top: 5.36rem;
+    margin-bottom: 1.07rem;
+    color: var(--color-black);
+}
+
+label {
+    width: 7.61rem;
+    height: 2.52rem;
+    background-color: var(--color-dark-white);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family:"TenorSans";
+    font-size: 16pt;
+    color: var(--color-black);
+}
+input {
+    width: 27.84rem;
+    height: 2.52rem;
+    border: none;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    /* background: var(--color-dark-white); */
+}
+
+/* .submit-button {
+    width: 10.5rem;
+    height: 3.22rem;
+    padding: 0.54rem 1.07rem;
+    background-color: #f1eeee;
+    font-size: 16pt;
+} */
+.submit-button {
+  background: #f1eeee;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 0.54rem 1rem;
+  font-size: 16pt;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  width: 100%;       
+  max-width: 250px;
+}
+
+.static-image {
+    display: block;
+}
+
+#mobileCarousel {
+    display: none;
+}
+/* Эффекты */
+a, .profile-button, .submit-button {
+  transition: all 0.3s ease;
+}
+.profile-button:hover {
+  background-color: #c39b77;
+  color: white;
+  transform: scale(1.1);
+}
+
+.submit-button:hover {
+  transform: translateY(-2px);
+}
+
+.submit-button:active {
+  transform: scale(0.97);
+}
+nav a img {
+  transition: transform 0.3s;
+}
+
+nav a:hover img {
+  transform: scale(1.2) rotate(5deg);
+}
+
+.topinfo a {
+  position: relative;
+  text-decoration: none;
+  color: #1c243b;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.topinfo a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #2f2c3f; 
+  bottom: -4px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.topinfo a:hover {
+  color: #2f2c3f;
+}
+
+.topinfo a:hover::after {
+  width: 100%;
+}
+
+/* В 1200px and 1400px */
+@media (max-width: 1400px) {
+    .main-pic-size {
+        width: 65rem;
+        height: 33.9rem; 
+    }
+    .grey-container {
+        width: 65rem;
+    }
+    .name-mobile {
+        display: none;
+    }
+    .border-radius-10 {
+        width: 33.9rem;
+    }
+    .margin-between-blocks {
+        margin-bottom: 3.82rem;
+    }
+    .bottom-block {
+        width: 65rem;
+    }
+    .left-form-margin {
+        margin-left: 0;
+    }
+
+    .topinfo {
+    margin-right: 0.8rem;
+    }
+}
+
+/* Btwn 992 px and 1200px ноутбуки */
+@media (max-width: 1200px) {
+    .main-pic-size {
+        width: 55rem;
+        height: 28.68rem;
+    }
+    .grey-container {
+        width: 55rem;
+    }
+    .name-mobile {
+        display: none;
+    }
+    .border-radius-10 {
+        width: 28.65rem;
+    }
+    .profile-button {
+        padding: 0.91rem  2.47rem;
+        font-size: 24pt;
+    }
+    .Natalya {
+        font-size: 58pt;
+    }
+    h1{
+        font-size: 58pt;
+    }
+    .description {
+        font-size: 32pt;
+    }
+    .margin-between-blocks {
+        margin-bottom: 3rem;
+    }
+    /* Изменения формы */
+    .bottom-block {
+        width: 55rem;
+    }
+    .left-form-margin {
+        margin-left: 0;
+    }
+    .title {
+        margin-top: 5.9rem;
+        margin-bottom: 1rem;
+        font-size: 22pt;
+    }
+    label {
+        width: 7rem;
+        height: 2.3rem;
+        font-size: 14pt;
+    }
+    input {
+        width: 25rem;
+        height: 2.3rem;
+    }
+    .submit-button {
+        width: 9.5rem;
+        height: 3rem;
+        padding: 0.54rem 1.07rem;
+        font-size: 14pt;
+    }
+    /* Изменения футера */
+    footer {
+        font-size: 12pt;
+    }
+}
+
+/* Btwn 992px and 768px планшеты*/
+@media (max-width: 992px) {
+    .main-pic-size {
+        width: 45rem;
+        height: 23.46rem;
+    }
+    /* Блок description */
+    .grey-container {
+        width: 45rem;
+    }
+    .name-mobile {
+        display: none;
+    }
+    .Natalya {
+        font-size: 52pt;
+    }
+    h1{
+        font-size: 52pt;
+    }
+    .description {
+        font-size: 28pt;
+    }
+    .border-radius-10 {
+        width: 23.45rem
+    }
+    .profile-button {
+        padding: 0.91rem  1.47rem;
+        font-size: 18pt;
+    }
+    .buttom-margin {
+        margin-bottom: 0.5rem;
+    }
+
+    /* Изменения формы */
+    .bottom-block {
+        width: 45rem;
+    }
+    .left-form-margin {
+        margin-left: 0;
+        margin-right: 0.7rem;
+    }
+    .title {
+        margin-top: 7.2rem;
+        margin-bottom: 1.4rem;
+        margin-right: 1rem;
+        font-size: 20pt;
+    }
+
+}
+
+/* less than 768px малые девайсы */
+@media (max-width: 768px) {
+    .main-pic-size {
+        width: 100%;
+        height: auto;
+    }
+    /* Блок description */
+    .grey-container {
+        width: 100%;
+        height: auto;
+    }
+    .name-mobile {
+        display: none;
+    }
+    .Natalya {
+        font-size: 52pt;
+    }
+    h1 {
+        font-size: 52pt;
+    }
+    .description {
+        font-size: 18pt;
+    }
+    .border-radius-10 {
+        width: 100%;
+
+    }
+    .profile-button {
+        padding: 0.5rem  0.5rem;
+        font-size: 14pt;
+    }
+    .bottom-block {
+        width: 100%;
+        height: auto;
+    }
+    /* Изменения формы */
+    .left-form-margin {
+        margin-left: 0 !important;
+        padding-bottom: 3rem;
+    }
+
+    .title {
+        margin-top: 3rem;
+        text-align: center;
+        font-size: 18pt;
+    }
+    form.d-flex.flex-column {
+        gap: 0.5rem;
+    }
+
+    form.d-flex.flex-column label {
+        font-size: 14pt;
+        margin-bottom: 0.3rem;
+    }
+
+    form.d-flex.flex-column input {
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 14pt;
+        box-sizing: border-box;
+    }
+
+    .submit-button {
+        font-size: 14pt;
+        padding: 0.1rem;
+    }
+}
+@media (max-width: 567px) {
+    .main-pic-size {
+        width: 100%;
+        height: 25.4rem;
+        object-fit: cover;
+    }
+    .static-image {
+        display: none !important;
+    }
+    #mobileCarousel {
+        display: block !important;
+    }
+
+    /* Блок description */
+    .grey-container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items:center;
+        text-align: justify;
+        width: 100%;
+        height: auto;
+    }
+    .grey-container > .col-5,
+    .grey-container > .col-7 {
+        width: 100% !important;
+        max-width: 100%;
+        flex: none;
+    }
+    .Natalya {
+        font-size: 36pt;
+    }
+    h1{
+        font-size: 36pt;
+    }
+    .name-default {
+        display: none;
+    }
+    .name-mobile {
+        display: inline;
+    }
+    .description {
+        font-size: 20pt;
+        margin-bottom: 3%;
+    }
+    .border-radius-10 {
+        width: 80%;
+        display: block;
+        margin: 0 auto; 
+
+    }
+    .profile-button {
+        padding: 0.5rem  0.5rem;
+        font-size: 16pt;
+    }
+    .bottom-block {
+        width: 100%;
+    }
+    /* Изменения формы */
+    .left-form-margin {
+        margin-left: 0 !important;
+        padding-bottom: 3rem;
+    }
+    .title {
+        margin-top: 3rem;
+        text-align: center;
+        font-size: 18pt;
+    }
+        form.d-flex.flex-column {
+        gap: 0.5rem;
+    }
+    
+    form.d-flex.flex-column label {
+        font-size: 13pt;
+        margin-bottom: 0.3rem;
+    }
+
+    form.d-flex.flex-column input {
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 14pt;
+        box-sizing: border-box;
+    }
+
+    .submit-button {
+        font-size: 12pt;
+        padding: 0.1rem;
+        max-width: 150px;
+    }
+}
+
+
